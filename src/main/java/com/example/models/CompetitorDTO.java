@@ -1,15 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 package com.example.models;
 
-/**
- *
- * @author Mauricio
- */
+import java.util.Set;
+
+
+
 public class CompetitorDTO {
  
     private String name;
@@ -28,6 +24,11 @@ public class CompetitorDTO {
     
     private String country;
     
+    private boolean winner;
+    
+    private String contra;
+    
+    private Set<Producto> productos;
     
     public CompetitorDTO(){
         
@@ -96,5 +97,31 @@ public class CompetitorDTO {
     public void setCountry(String country) {
         this.country = country;
     }
+
+    public String getContra() {
+        return contra;
+    }
+
+    public void setContra(String contra) {
+        this.contra = contra;
+    }
+
+    public Set<Producto> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(Set<Producto> productos) {
+        this.productos = productos;
+    }
+
+    public boolean isWinner() {
+        return winner;
+    }
+
+    public void setWinner(boolean winner) {
+        this.winner = winner;
+    }
+    
+    
     
 }
